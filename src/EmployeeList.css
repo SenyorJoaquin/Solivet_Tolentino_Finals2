@@ -1,0 +1,239 @@
+/*================================================================================= Global Design ============================================================================================== */
+body {
+    padding: 20px; /* Add padding to create margins on the sides */
+    margin: 0; /* Remove default margin to ensure full width */
+  }
+  
+  .page-container {
+    display: flex; /* Use flexbox to position sidebar and content side by side */
+  }
+  /*================================================================================= Global Design =========================================================================================== */
+
+
+
+ /*================================================================================= Sidebar Design =========================================================================================== */
+ .sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: white; /* Semi-transparent blue color */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  border-radius: 10px; /* Add rounded edges to the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box-shadow for depth */
+}
+  
+  .sidebar-header {
+    text-align: center; /* Center align the header text */
+    margin-bottom: 20px; /* Add margin below the header */
+  }
+  
+  .sidebar-header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; /* Set text color for the header */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .content {
+    flex: 1; /* Allow content to take remaining space */
+    padding-left: 20px; /* Add padding to separate content from sidebar */
+  }
+ /*================================================================================= Sidebar Design =========================================================================================== */
+
+
+
+  /*================================================================================= Table Design ============================================================================================ */
+  .content h2 {
+    color: white; 
+  }
+  
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; 
+    overflow: hidden;
+  }
+  
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .employee-table th {
+    background-color: #365486; 
+    color: white;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .employee-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #365486;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px; 
+}
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: #0056b3;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  /*================================================================================= Table Design ============================================================================================ */
+
+
+
+  
+  /*=============================================================================-==== Edit Design ============================================================================================ */
+  .modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 230px; 
+    height: auto; 
+    margin-bottom: 0px; 
+  }
+
+  .sidebar-message {
+    margin-top: -15px; 
+    color: #365486; 
+    font-size: 16px; 
+  }
+/*==================================================================================== Edit Design ============================================================================================ */
+
+  
+
+/*=============================================================================== Control Panel Design ======================================================================================== */
+  .control-panel {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+  }
+  
+  .control-panel h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .add-employee,
+  .sort-by {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .add-employee:hover,
+  .sort-by:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .add-employee span:first-child,
+  .sort-by span:first-child {
+    flex-grow: 1;
+  }
+  
+  .add-employee-background,
+  .sort-by-background {
+    background-color: #f5cf5d; 
+    color: #ffffff; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold; 
+    text-align: center;
+  }
+  
+  .plus-sign {
+    font-size: 1.5em;
+    color: #365486;
+    margin-left: 5px;
+  }
+
+  .sort-dropdown select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #0F1035;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .sort-dropdown select:hover {
+    background-color: #e0e0e0;
+  }
+/*=============================================================================== Control Panel Design ======================================================================================== */
